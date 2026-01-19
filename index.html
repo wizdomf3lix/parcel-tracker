@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parcel Tracker</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">ParcelTracker</a>
+      <nav class="nav">
+        <a href="index.html">Track</a>
+        <a href="result.html">Demo Result</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main tracking form -->
+  <main class="container main-content">
+    <h1>Track a Package</h1>
+    <p>Enter your tracking number below to see the latest status.</p>
+
+    <form id="track-form" class="track-form">
+      <input type="text" id="trackingNumber" placeholder="Enter Tracking ID" required />
+      <button type="submit">Track</button>
+    </form>
+    <p class="help-text">Demo tracking ID: <strong>TRK123456789US</strong></p>
+    <div id="error" class="form-error"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 ParcelTracker. Inspired by USPS design.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
