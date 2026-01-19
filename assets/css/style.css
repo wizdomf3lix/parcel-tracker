@@ -1,38 +1,107 @@
-body { font-family: Arial, sans-serif; background: #f9fafb; margin: 0; }
-.container { max-width: 800px; margin: 0 auto; padding: 20px; }
-h1 { color: #0b57d0; }
+/* Background image */
+body.bg-image {
+  background: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #fff;
+}
 
-/* Header */
-.site-header { background: #0b57d0; color: #fff; padding: 10px 0; }
-.header-inner { display: flex; justify-content: space-between; align-items: center; }
-.brand { font-weight: bold; color: #fff; text-decoration: none; font-size: 1.2rem; }
-.nav a { color: #fff; margin-left: 15px; text-decoration: none; }
-.nav a:hover { text-decoration: underline; }
+/* Center card with glass effect */
+.center-card {
+  max-width: 600px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Headings */
+h1 { margin-top: 0; font-size: 2rem; color: #fff; }
+p { color: #eee; }
 
 /* Form */
-.track-form { display: flex; gap: 10px; margin-top: 20px; }
-.track-form input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
-.track-form button { padding: 10px 16px; background: #0b57d0; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
-.track-form button:hover { background: #0a47a8; }
-.help-text { margin-top: 10px; color: #555; }
-.form-error { color: red; margin-top: 10px; }
+.track-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.track-form input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.track-form button {
+  padding: 12px 20px;
+  background: #0b57d0;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.track-form button:hover { background: #0940a0; }
+.help-text { margin-top: 10px; color: #ddd; }
+.form-error { color: #ff6b6b; margin-top: 10px; }
 
 /* Tracking card */
-.tracking-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-top: 20px; }
-.tracking-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
-.status { padding: 6px 12px; border-radius: 20px; font-weight: bold; color: #fff; }
+.tracking-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+.tracking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+}
 .status.in-transit { background: #0b57d0; }
 
 /* Timeline */
 .timeline { position: relative; margin: 0; padding: 0; }
 .event { display: flex; align-items: flex-start; margin-bottom: 20px; position: relative; }
-.dot { width: 14px; height: 14px; background: #0b57d0; border-radius: 50%; margin-right: 12px; flex-shrink: 0; }
-.event::after { content: ""; position: absolute; left: 6px; top: 14px; width: 2px; height: calc(100% - 14px); background: #ccc; }
+.dot {
+  width: 14px; height: 14px;
+  background: #0b57d0;
+  border-radius: 50%;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+.event::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 14px;
+  width: 2px;
+  height: calc(100% - 14px);
+  background: rgba(255,255,255,0.5);
+}
 .event:last-child::after { display: none; }
-.event-content h3 { margin: 0; font-size: 1rem; color: #111; }
-.event-content p { margin: 4px 0 0; color: #555; font-size: 0.9rem; }
+.event-content h3 { margin: 0; font-size: 1rem; color: #fff; }
+.event-content p { margin: 4px 0 0; color: #ddd; font-size: 0.9rem; }
 
-/* Footer */
-.site-footer { background: #0b57d0; color: #fff; text-align: center; padding: 10px 0; margin-top: 40px; }
-.back-link { display: inline-block; margin-top: 20px; text-decoration: none; color: #0b57d0; }
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
 .back-link:hover { text-decoration: underline; }
