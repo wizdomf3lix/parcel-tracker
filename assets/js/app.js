@@ -4,4 +4,6 @@ document.getElementById("track-form").addEventListener("submit", function(e) {
   if (input === "TRK123456789US") {
     window.location.href = "result.html";
   } else {
-    document.getElementById
+    document.getElementById("error").textContent = "Tracking number not found. Try TRK123456789US.";
+  }
+});
