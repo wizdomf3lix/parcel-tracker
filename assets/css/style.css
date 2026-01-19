@@ -1,143 +1,38 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f9fafb;
-  margin: 0;
-  padding: 0;
-}
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
+body { font-family: Arial, sans-serif; background: #f9fafb; margin: 0; }
+.container { max-width: 800px; margin: 0 auto; padding: 20px; }
 h1 { color: #0b57d0; }
 
 /* Header */
-.site-header {
-  background: #0b57d0;
-  color: #fff;
-  padding: 10px 0;
-}
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.brand {
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-.nav a {
-  color: #fff;
-  margin-left: 15px;
-  text-decoration: none;
-}
+.site-header { background: #0b57d0; color: #fff; padding: 10px 0; }
+.header-inner { display: flex; justify-content: space-between; align-items: center; }
+.brand { font-weight: bold; color: #fff; text-decoration: none; font-size: 1.2rem; }
+.nav a { color: #fff; margin-left: 15px; text-decoration: none; }
 .nav a:hover { text-decoration: underline; }
 
 /* Form */
-.track-form {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-.track-form input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.track-form button {
-  padding: 10px 16px;
-  background: #0b57d0;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+.track-form { display: flex; gap: 10px; margin-top: 20px; }
+.track-form input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+.track-form button { padding: 10px 16px; background: #0b57d0; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
 .track-form button:hover { background: #0a47a8; }
 .help-text { margin-top: 10px; color: #555; }
 .form-error { color: red; margin-top: 10px; }
 
 /* Tracking card */
-.tracking-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-top: 20px;
-}
-.tracking-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-.status {
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-weight: bold;
-  color: #fff;
-}
+.tracking-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-top: 20px; }
+.tracking-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
+.status { padding: 6px 12px; border-radius: 20px; font-weight: bold; color: #fff; }
 .status.in-transit { background: #0b57d0; }
-.status.delivered { background: #16a34a; }
-.status.exception { background: #dc2626; }
 
 /* Timeline */
-.timeline {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-.event {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  position: relative;
-}
-.dot {
-  width: 14px;
-  height: 14px;
-  background: #0b57d0;
-  border-radius: 50%;
-  margin-right: 12px;
-  flex-shrink: 0;
-}
-.event::after {
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: 14px;
-  width: 2px;
-  height: calc(100% - 14px);
-  background: #ccc;
-}
+.timeline { position: relative; margin: 0; padding: 0; }
+.event { display: flex; align-items: flex-start; margin-bottom: 20px; position: relative; }
+.dot { width: 14px; height: 14px; background: #0b57d0; border-radius: 50%; margin-right: 12px; flex-shrink: 0; }
+.event::after { content: ""; position: absolute; left: 6px; top: 14px; width: 2px; height: calc(100% - 14px); background: #ccc; }
 .event:last-child::after { display: none; }
-.event-content h3 {
-  margin: 0;
-  font-size: 1rem;
-  color: #111;
-}
-.event-content p {
-  margin: 4px 0 0;
-  color: #555;
-  font-size: 0.9rem;
-}
+.event-content h3 { margin: 0; font-size: 1rem; color: #111; }
+.event-content p { margin: 4px 0 0; color: #555; font-size: 0.9rem; }
 
 /* Footer */
-.site-footer {
-  background: #0b57d0;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 40px;
-}
-.back-link {
-  display: inline-block;
-  margin-top: 20px;
-  text-decoration: none;
-  color: #0b57d0;
-}
+.site-footer { background: #0b57d0; color: #fff; text-align: center; padding: 10px 0; margin-top: 40px; }
+.back-link { display: inline-block; margin-top: 20px; text-decoration: none; color: #0b57d0; }
 .back-link:hover { text-decoration: underline; }
